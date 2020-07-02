@@ -8,9 +8,10 @@ class ProblemA {
     Scanner scan = new Scanner(System.in);
     int numberOfTemperatures = scan.nextInt(); //läs in antal dagar
     int daysBelowZero = 0; //Initiera resultatet
+    int temp;
 
     for (int i=0; i<numberOfTemperatures ; i++ ) { //För varje heltal som är mindre än 0, addera 1 till resultatet
-      int temp = scan.nextInt();
+      temp = scan.nextInt();
       if (temp < 0) {
         daysBelowZero += 1;
       }
